@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+.container{
+    width: 500px;
+    height: 500px;
+   border: 2px  solid black;
+   background-color: lightblue;
+   margin-left:  500PX;
+   margin-top: 150PX;
+  
+}
+.child{
+    height: 200px;
+    width: 150px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    animation-name: backgroundchange;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out;
+    
+
+}
+@keyframes backgroundchange {
+    0%{
+ background-color: black;
+ left: 0%;
+ top: 0px;
+    }
+    25%{
+background-color: blue;
+left: 300px;
+top: 0px;
+    }
+    50%{
+background-color: red ;
+left: 300px;
+top: 300px;
+    }
+    75%{
+        background-color: yellow;
+        left: 0px;
+top: 300px;
+    }
+    100%{
+background-color: green;
+left: 0%;
+ top: 0px;
+    }
+}
+.button{
+    width: 200px;
+    border-radius: 15px;
+    padding: 20px;
+    margin-left: 650px;
+    margin-top: 20px;
+    background-color: lightseagreen;
+    transition: background-color 2s;
+
+   
+}
+.button:hover{
+    background-color: lightskyblue;
+    color: black;
+    transform: translateY(-10px) ;
+
+}
+a{
+    color: white;
+    text-decoration: none;
+}
